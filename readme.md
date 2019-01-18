@@ -16,8 +16,9 @@ $ composer require laraviet/backpackui1
 
 ## Usage
 
-In generated CRUD Controller, add below line into end of setup() method
+In generated CRUD Controller, add below lines into end of setup() method
 
 ```
 $this->crud->setListView('backpackui1::theme.list');
+$this->crud->removeButtonFromStack('create', 'top');
 ```
